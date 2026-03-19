@@ -27,15 +27,7 @@
       }
     },
     "background": {
-      "image": {
-        "type": "file",
-        "label": "Background Image",
-        "value": "assets/mountain_bg.png",
-        "meta": {
-          "accepted_formats": ["png", "jpg", "jpeg", "webp"],
-          "path": "assets/"
-        }
-      }
+      "image": "assets/image.png"
     }
   }
 }
