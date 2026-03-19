@@ -1,0 +1,74 @@
+/*
+   No default values for data-driven properties in :root.
+   These will be set entirely by JS from data.json to prevent FOUC.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color); /* Set by JS */
+    color: var(--text-color); /* Set by JS */
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+#app-container {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#app-container.loaded {
+    opacity: 1;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+    z-index: 1;
+}
+
+.clock-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background: rgba(16, 24, 31, 0.4); /* Dark background with transparency */
+    backdrop-filter: blur(10px);
+    padding: 3rem 5rem;
+    border-radius: 2rem;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.time-display {
+    font-size: 8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -2px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.date-display {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}

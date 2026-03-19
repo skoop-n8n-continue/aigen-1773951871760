@@ -1,0 +1,41 @@
+{
+  "app_id": "aigen-1773951871760",
+  "document_version": 1,
+  "sections": {
+    "app_settings": {
+      "primary_color": {
+        "type": "color",
+        "label": "Primary Accent Color",
+        "value": "#00b7af"
+      },
+      "background_color": {
+        "type": "color",
+        "label": "Fallback Background Color",
+        "value": "#10181f"
+      },
+      "text_color": {
+        "type": "color",
+        "label": "Text Color",
+        "value": "#ffffff"
+      }
+    },
+    "storefront": {
+      "app_name": {
+        "type": "text",
+        "label": "App Name",
+        "value": "Modern Mountain Clock"
+      }
+    },
+    "background": {
+      "image": {
+        "type": "file",
+        "label": "Background Image",
+        "value": "assets/mountain_bg.png",
+        "meta": {
+          "accepted_formats": ["png", "jpg", "jpeg", "webp"],
+          "path": "assets/"
+        }
+      }
+    }
+  }
+}
