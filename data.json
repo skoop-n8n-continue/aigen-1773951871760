@@ -30,9 +30,14 @@
       "image": {
         "type": "file",
         "label": "Background Image",
-        "value": "assets/mountain_bg.png",
+        "value": "assets/image.png",
         "meta": {
-          "accepted_formats": ["png", "jpg", "jpeg", "webp"],
+          "accepted_formats": [
+            "png",
+            "jpg",
+            "jpeg",
+            "webp"
+          ],
           "path": "assets/"
         }
       }
